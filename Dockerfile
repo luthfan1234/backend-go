@@ -1,6 +1,6 @@
 # Multi-stage build — pola dari produksi (disederhanakan, tanpa DB)
 # Stage 1: Build
-FROM golang:1.24.13-alpine AS builder
+FROM golang:1.26.8-alpine AS builder
 RUN go version
 WORKDIR /src
 COPY go.mod go.sum ./
